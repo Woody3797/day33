@@ -1,0 +1,15 @@
+<h1>Number List</h1>
+
+<div *ngIf="numbers.length > 0 else noNums">
+    <ul>
+        <li *ngFor="let n of numbers">
+            {{ n }}
+        </li>
+        <h3>Sum: {{ total }}</h3>
+    </ul>
+    
+</div>
+
+<ng-template #noNums>
+    <h2>no numbers in list</h2>
+</ng-template>
