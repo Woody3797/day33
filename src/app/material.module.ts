@@ -18,6 +18,5 @@ const matModules: any[] = [
     exports: matModules
 })
 export class MaterialModule {
-
 }
 
